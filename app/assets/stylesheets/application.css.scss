@@ -1,0 +1,138 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+:root{
+  --white: #FFFFFF;
+  --highlight: #d2674e;
+  --dark: #22292e;
+}
+
+.wrapper_wide{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper_skinny{
+  width: 50%;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#background header{
+  padding: 3rem 0;
+}
+
+#logo{
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#background{
+  background-image: image-url("home-background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+
+nav{
+  float: right;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+}
+
+li{
+  display: inline;
+  margin-left: 2.5rem;
+}
+
+a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.cf:before, .cf:after{
+  content: " ";
+  display: table;
+}
+
+.cf:after{
+  clear: both;
+}
+
+h1{
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem;
+}
+
+.button{
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+  margin: 1.5rem 2.5% 0;
+}
+
+.button_highlight{
+  background-color: var(--highlight);
+  transition: background .4s ease-in-out;
+}
+
+.button_highlight:hover{
+  background-color: #ba492f;
+}
+
+.button_white{
+  background-color: var(--white);
+  color: var(--dark);
+  transition: background .4s ease-in-out;
+}
+
+.button_white:hover{
+  background-color: #d6cccc;
+}
+
+
+.main_header{
+  color: var(--dark);
+  background-color:var(--white);
+  padding: 2.5rem 0;
+}
+
