@@ -1,3 +1,26 @@
+<div id="podcast_show">
+  <div id="show_banner">
+  <div class="wrapper_skinny">
+    <h1>American History Tellers</h1>
+
+  </div>
+
+  <div id="links">
+    <div class="wrapper_skinny">
+      <ul class="dashboard_ul">
+        <li class="dash-links">Episodes</li>
+        <li><a class="dash-links" href="#">New Episode</a></li>
+        <li> <%= link_to "Account Settings", edit_podcast_registration_path, class: "dash-links current" %></li>
+
+        <li><a class="dash-links" href="#">View Podcast</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div id="form">
+  <div class="wrapper_skinny">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -61,7 +84,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update", class: "button button_highlight button_block" %>
   </div>
 <% end %>
 
@@ -70,3 +93,6 @@
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+
+</div>
+</div>

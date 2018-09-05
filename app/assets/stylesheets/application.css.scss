@@ -80,21 +80,21 @@ a{
   text-decoration: none;
 }
 
-.cf:before, .cf:after{
-  content: " ";
-  display: table;
-}
+// .cf:before, .cf:after{
+//   content: " ";
+//   display: table;
+// }
 
-.cf:after{
-  clear: both;
-}
+// .cf:after{
+//   clear: both;
+// }
 
 h1{
   color: var(--white);
   font-size: 3.5rem;
   font-weight: 300;
   letter-spacing: 1px;
-  margin: 7rem 0 2rem;
+  // margin: 7rem 0 2rem;
 }
 
 .button{
@@ -130,9 +130,46 @@ h1{
 }
 
 
-.main_header{
-  color: var(--dark);
-  background-color:var(--white);
-  padding: 2.5rem 0;
+#main_header{
+  color: black;
+  // background-color: red;
+  // padding: 2.5rem 0;
 }
 
+
+// ---------------------------------
+// ---------------------------------
+// ---------------------------------
+
+#links{
+  /* padding: 2rem 0; */
+}
+
+.dashboard_ul{
+  /* padding-left: 0;
+  list-style: none;
+  margin-bottom: 4rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid grey; */
+}
+
+.dash-links{
+  /* display: inline; */
+  color: white;
+  float: right;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+#show_banner{
+  /* color: var(--dark); */
+  background-color: #22292e;
+}
+
+#episodes{
+  /* height: 10vh; */
+}
+
+.pod-list{
+  margin-top: 80px;
+}

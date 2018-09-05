@@ -19,6 +19,28 @@
 
   <% end %>
 
+  <header id="main_header" class="cf">
+    <div class="wrapper_wide">
+      <%= link_to "LOGO", root_path, id: "logo" %>
+
+      <nav>
+        <ul>
+
+          <% unless podcast_signed_in? %>
+            <li><a href="#">Explore</a></li>
+            <li> <%= link_to "Sign in", new_podcast_session_path %> </li>
+            <li> <%= link_to "Create", new_podcast_registration_path %> </li>
+          <% else %>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Explore</a></li>
+            <li> <%= link_to "Sign out", destroy_podcast_session_path, method: :delete %></li>
+          <% end %>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
     <%= yield %>
   </body>
 </html>

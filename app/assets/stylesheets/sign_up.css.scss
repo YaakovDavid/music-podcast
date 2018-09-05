@@ -1,0 +1,165 @@
+:root{
+  --white: #FFFFFF;
+  --highlight: #d2674e;
+  --dark: #22292e;
+}
+
+.wrapper_wide{
+  width: 90%;
+  margin: 25px auto 0;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper_skinny{
+  width: 60%;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: .35rem .35rem 0 0;
+}
+
+img:hover{
+  opacity: .8;
+}
+h2:hover{
+  color: var(--highlight);
+}
+
+
+
+.podcast_overview{
+  /* width: 200px; */
+  padding: 1rem;
+}
+
+#main_header{
+  color: black;
+  // background-color: red;
+  // padding: 2.5rem 0;
+}
+
+nav{
+  float: right;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav > ul > li{
+  display: inline;
+  margin-left: 2.5rem;
+}
+
+.pod-card{
+  width: 23%;
+  height: 350px;
+  float: left;
+  margin: 0 1% 2rem 1%;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25);
+  border-radius: .35rem;
+}
+
+a{
+  color: var(--dark);
+  text-decoration: none;
+}
+
+#banner{
+  background-image: image-url("in-sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+  /* opacity: 0.9; */
+  /* border-bottom: 2px solid rgb(0, 0, 71);  */
+}
+
+h1{
+  text-align: center;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 8rem 0;
+}
+
+
+
+h2{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.episode_count{
+  color: grey;
+  font-size: .9rem;
+  margin: .5rem 0 .25rem;
+}
+
+// .cf:before, .cf:after{
+//   content: " ";
+//   display: table;
+// }
+
+// .cf:after{
+//   clear: both;
+// }
+
+.pagination{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.pagination > a, .previous_page, .next_page{
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 5rem .25rem;
+  border-radius: .15rem;
+  line-height: 1.25;
+  text-decoration: none;
+  background-color: #edeff5;
+  font-weight: 700;
+  font-size: .7rem;
+  color: var(--dark);
+  font-style: normal;
+}
+.pagination > a:hover, .previous_page:hover, .current:hover, .next_page:hover{
+  // color: var(--highlight);
+  // background-color: var(--highlight);
+
+  // color: var(--white);
+}
+
+.current{
+  // background-color: #edeff5;
+  // color: var(--dark);
+  color: var(--highlight);
+
+}
+
+.disabled{
+  color: #c0c0c0;
+}
+
+.disabled:hover{
+  color: #c0c0c0;
+  background-color: #edeff5;
+}
