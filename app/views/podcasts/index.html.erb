@@ -1,0 +1,24 @@
+  <div id="banner" class="podecast_banner">
+    <h1>Discover your new Music & Podcasts.</h1>
+  </div>
+
+  <div id="podcast" class="cf">
+    <div class="wrapper">
+      <ul>
+
+      <% @podcast.each do |podcast|%>
+        <%= link_to podcast do %>
+
+          <img src="images/american-history-tellers.jpg" alt="american-history-tellers">
+          <div class="podcast_overview">
+            <h2><%= podcast.title %></h2>
+            <p class="episode_count">1 episode</p>
+          </div>
+
+        <% end %>
+      <% end %>
+
+
+      </ul>
+    </div>
+  </div>

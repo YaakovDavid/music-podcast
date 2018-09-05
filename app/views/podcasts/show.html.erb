@@ -1,0 +1,114 @@
+  <div id="podcast_show">
+    <div id="show_banner">
+      <div class="wrapper_skinny">
+        <h1><%= @podcast.title %></h1>
+        <p class="description"><%= @podcast.description %></p>
+
+        <% unless @podcast.itunes.blank? %>
+          <a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+        <% end %>
+
+        <% unless @podcast.soundcloud.blank? %>
+         <a href="<%= @podcast.soundcloud %>" class="subscribe_link">SoundCloud</a>
+        <% end %>
+
+        <% unless @podcast.spotify.blank? %>
+          <a href="<%= @podcast.spotify %>" class="subscribe_link">Spotify</a>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="breadcrumb">
+
+      <%= link_to podcasts_path do %>
+        All Music & Podcasts
+        <span>/</span>
+        American History Tellers
+      <% end %>
+
+
+    </div>
+
+    <div id="episodes">
+      <div class="wrapper_skinny">
+        <ul class="cf">
+
+          <li class="cf pod-list">
+            <div class="episode_thumbnail">
+              <a href="episode.html">
+                <img src="images/american-history-tellers.jpg" alt="">
+              </a>
+            </div>
+            <div class="episode_overview">
+              <h2><a href="episode.html">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a></h2>
+
+              <br>
+
+              <p class="pod-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe reiciendis fugit iure iste quia blanditiis obcaecati vero, praesentium, quod sequi molestias officia quam doloribus suscipit pariatur enim vel eos.</p>
+            </div>
+          </li>
+
+          <li class="cf pod-list">
+            <div class="episode_thumbnail">
+              <a href="episode.html">
+                <img src="images/american-history-tellers.jpg" alt="">
+              </a>
+            </div>
+            <div class="episode_overview">
+              <h2>
+                <a href="episode.html">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+              </h2>
+
+              <br>
+
+              <p class="pod-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe reiciendis fugit iure iste quia blanditiis obcaecati
+              vero, praesentium, quod sequi molestias officia quam doloribus suscipit pariatur enim vel eos.</p>
+            </div>
+          </li>
+
+          <li class="cf pod-list">
+            <div class="episode_thumbnail">
+              <a href="episode.html">
+                <img src="images/american-history-tellers.jpg" alt="">
+              </a>
+            </div>
+            <div class="episode_overview">
+              <h2>
+                <a href="episode.html">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+              </h2>
+
+              <br>
+
+              <p class="pod-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe reiciendis fugit iure iste quia blanditiis obcaecati
+                vero, praesentium, quod sequi molestias officia quam doloribus suscipit pariatur enim vel eos.</p>
+            </div>
+          </li>
+
+          <li class="cf pod-list">
+            <div class="episode_thumbnail">
+              <a href="episode.html">
+                <img src="images/american-history-tellers.jpg" alt="">
+              </a>
+            </div>
+            <div class="episode_overview">
+              <h2>
+                <a href="episode.html">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+              </h2>
+
+              <br>
+
+              <p class="pod-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente saepe reiciendis fugit iure iste quia blanditiis obcaecati
+                vero, praesentium, quod sequi molestias officia quam doloribus suscipit pariatur enim vel eos.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="pagination cf">
+    <span class="previous_page disabled">Previous</span>
+    <em class="current">1</em>
+    <a href="#">2</a>
+    <a href="#" class="next_page">Next</a>
+  </div>
